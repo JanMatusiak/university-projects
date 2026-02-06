@@ -1,21 +1,20 @@
 # university-projects
-A curated collection of my university coursework projects from Data Engineering at Gdańsk University of Technology. Includes selected assignments in Basics of Computer Programming (C/C++), Algorithms &amp; Data Structures, Object-Oriented Programming (C++/Java/Python), Databases (ERD/SQL), Software Engineering (UML) and Statistics in Python.
+A curated collection of my university coursework projects from Data Engineering at Gdańsk University of Technology. Includes selected assignments in Basics of Computer Programming (C/C++), Algorithms &amp; Data Structures (Stack/Heap/Trie in C++), Object-Oriented Programming (C++/Java/Python), Databases (ERD/SQL) and Software Engineering (UML).
 
 ## Table of contents
 [Basics of Computer Programming](#basics-of-computer-programming)
 * [Jumping Frog (C procedural programming)](#jumping-frog)
-
-
-[Object-Oriented Programming](#object-oriented-programming)
-* [Virtual World Simulator (C++ / console)](#virtual-world-simulator-c--console)
-* [Virtual World Simulator (Java / Swing GUI)](#virtual-world-simulator-java--swing-gui)
-* [Virtual World Simulator (Python / GUI)](#virtual-world-simulator-python--gui)
-
+* [Snake Game (C++ procedural programming](#snake-game)
 
 [Algorithms &amp; Data Structures](#algorithms--data-structures)
 * [Stack Processor](#stack-processor)
 * [Binary Heap](#binary-heap)
 * [Trie](#trie)
+
+[Object-Oriented Programming](#object-oriented-programming)
+* [Virtual World Simulator (C++ / console)](#virtual-world-simulator-c--console)
+* [Virtual World Simulator (Java / Swing GUI)](#virtual-world-simulator-java--swing-gui)
+* [Virtual World Simulator (Python / GUI)](#virtual-world-simulator-python--gui)
 
 [Databases](#databases)
 * [Shipping Line Database](#shipping-line-database)
@@ -43,46 +42,29 @@ The gameplay parameters (e.g., time limit, car length/speed, and colors) are con
 gcc frogger.c -o frogger -lncurses
 ./frogger
 ```
-(Ensure config.txt is in the same directory when running.)
+(Ensure config.txt is in the same directory when running.)  
 
-## Object-Oriented Programming
+### [Snake Game](basics-of-computer-programming/snake-game)
+## Snake (C++ / SDL2) — Coursework Game Implementation
 
-### [Virtual World Simulator (C++ / console)](object-oriented-programming/virtual-world-cpp)
-
-A turn-based 2D virtual world simulator implemented in C++, visualized in the console using ASCII symbols. The world is represented as an NxM grid where each organism occupies one cell. During each turn, organisms act in initiative/age order; animals move and collide, plants spread, and fights/breeding affect the world state.    
-
-**Features:**
-- Console visualization (ASCII map + event log)
-- Turn system (initiative + age ordering)
-- Animals + plants with unique behaviors (movement, collisions, special rules)
-- Human controlled via arrow keys + special ability
-- Breeding (animals) and sowing (plants)
-- Save/Load game state to/from file
-
-### [Virtual World Simulator (Java / Swing GUI)](object-oriented-programming/virtual-world-java)
-
-A Java implementation of the same virtual world simulator, this time with a GUI built in Swing. The application provides GUI controls for advancing turns and managing the simulation, and it displays a message/log area for events (fights, plant consumption, spawning, etc.).     
+This project is an implementation of the classic Snake game in C++ using the provided SDL2-based helper framework from the course instruction. The game renders a board and an information panel, supports keyboard control, and tracks gameplay state over time. The instruction forbids using the C++ STL types like string/vector and recommends C-style file I/O for persistence.  
+**Platform:** implemented and tested on Linux Ubuntu in Virtual Machine
 
 **Features:**
-- Swing-based grid visualization + event log panel
-- Turn progression via GUI controls
-- All required animals and plants + Human with special ability
-- Save/Load world state to/from file
-- Add organism by clicking a free cell (choose species/type)
+* Basic game UI: visible board area plus a side area for status information; key handling for Esc (exit) and n (new game) 
+* Snake movement controlled with arrow keys; no board wrapping; if the snake hits the border and the player does not turn, it automatically turns to a valid direction (right if possible, otherwise left) 
+* Self-collision detection; on collision the game ends and the player can exit or start a new game 
+* Elapsed time display and an on-screen list of completed requirements (mandatory and optional) 
+* Blue dot that spawns randomly; eating it increases snake length and spawns a new dot 
+* Speedup over time (configurable interval and factor) 
+* Red dot bonus that appears for a limited time; includes a progress bar; bonus randomly applies either shortening the snake or slowing it down 
+* Points system for eating blue and red dots 
+* Persistent top-3 best scores stored in a file; displayed after the game ends; prompts for a name if a score qualifies
 
-
-### [Virtual World Simulator (Python / GUI)](object-oriented-programming/virtual-world-python)
-
-A Python version of the virtual world simulator, implemented with a GUI (library of choice). The simulation follows the same turn-based rules (initiative/age ordering, collisions, organism behaviors), includes a Human controlled by arrow keys, and supports saving/loading the state.    
-  
-**Features:**
-- GUI visualization of the grid + event/messages area
-- Turn progression via GUI
-- Required animals (including cyber-sheep) and plants
-- Human controlled by arrow keys + special ability
-- Save/Load world state to/from file
-- Add organism by clicking a free cell (choose species/type)
-
+**To run (Linux):**
+```
+TODO
+```
 
 ## Algorithms &amp; Data Structures  
 
@@ -212,6 +194,43 @@ Output:
 30 exist
 30 not exist
 ```
+
+## Object-Oriented Programming
+
+### [Virtual World Simulator (C++ / console)](object-oriented-programming/virtual-world-cpp)
+
+A turn-based 2D virtual world simulator implemented in C++, visualized in the console using ASCII symbols. The world is represented as an NxM grid where each organism occupies one cell. During each turn, organisms act in initiative/age order; animals move and collide, plants spread, and fights/breeding affect the world state.    
+
+**Features:**
+- Console visualization (ASCII map + event log)
+- Turn system (initiative + age ordering)
+- Animals + plants with unique behaviors (movement, collisions, special rules)
+- Human controlled via arrow keys + special ability
+- Breeding (animals) and sowing (plants)
+- Save/Load game state to/from file
+
+### [Virtual World Simulator (Java / Swing GUI)](object-oriented-programming/virtual-world-java)
+
+A Java implementation of the same virtual world simulator, this time with a GUI built in Swing. The application provides GUI controls for advancing turns and managing the simulation, and it displays a message/log area for events (fights, plant consumption, spawning, etc.).     
+
+**Features:**
+- Swing-based grid visualization + event log panel
+- Turn progression via GUI controls
+- All required animals and plants + Human with special ability
+- Save/Load world state to/from file
+- Add organism by clicking a free cell (choose species/type)
+
+### [Virtual World Simulator (Python / GUI)](object-oriented-programming/virtual-world-python)
+
+A Python version of the virtual world simulator, implemented with a GUI (library of choice). The simulation follows the same turn-based rules (initiative/age ordering, collisions, organism behaviors), includes a Human controlled by arrow keys, and supports saving/loading the state.    
+  
+**Features:**
+- GUI visualization of the grid + event/messages area
+- Turn progression via GUI
+- Required animals (including cyber-sheep) and plants
+- Human controlled by arrow keys + special ability
+- Save/Load world state to/from file
+- Add organism by clicking a free cell (choose species/type)
 
 ## Databases  
 
