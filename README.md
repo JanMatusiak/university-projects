@@ -37,9 +37,13 @@ The gameplay parameters (e.g., time limit, car length/speed, and colors) are con
 - configurable gameplay settings via config.txt (colors, speed, time limit, etc.)
 - win/lose conditions with the option to restart
 
-**To run (MacOS/Linux):**
-```
-gcc frogger.c -o frogger -lncurses
+**To run (macOS / Linux):**
+
+On macOS, prefer `clang` (Apple’s default C compiler). On Linux, either `gcc` or `clang` works.
+
+macOS:
+```bash
+clang frogger.c -o frogger -lncurses
 ./frogger
 ```
 (Ensure config.txt is in the same directory when running.)  
