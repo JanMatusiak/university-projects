@@ -24,7 +24,7 @@ A curated collection of my university coursework projects from Data Engineering 
 
 ## Basics of Computer Programming
 
-### [Jumping Frog](basics-of-computer-programming/frogger)
+### [Jumping Frog](basics-of-computer-programming/jumping-frog)
 This is a terminal-based “Frogger” style action game implemented in C as part of my Basics of Computer Programming coursework.   
 The game uses ncurses for text graphics and event-driven input: you control a frog with the arrow keys and try to reach the safe zone while avoiding moving obstacles (cars) across multiple lanes.  
 The gameplay parameters (e.g., time limit, car length/speed, and colors) are configurable via a config.txt file located in the same folder.   
