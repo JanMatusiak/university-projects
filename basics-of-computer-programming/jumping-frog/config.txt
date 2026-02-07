@@ -1,0 +1,9 @@
+status_height = 6
+status_width = 20
+time_limit = 5
+car_length = 10
+max_speed = 4
+car_color = yellow
+safe_color = blue
+frog_color = green
+
