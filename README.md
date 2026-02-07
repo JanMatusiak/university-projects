@@ -49,7 +49,6 @@ clang frogger.c -o frogger -lncurses
 (Ensure config.txt is in the same directory when running.)  
 
 ### [Snake Game](basics-of-computer-programming/snake-game)
-## Snake (C++ / SDL2) — Coursework Game Implementation
 
 This project is an implementation of the classic Snake game in C++ using the provided SDL2-based helper framework from the course instruction. The game renders a board and an information panel, supports keyboard control, and tracks gameplay state over time. The instruction forbids using the C++ STL types like string/vector and recommends C-style file I/O for persistence.  
 **Platform:** implemented and tested on Linux Ubuntu in Virtual Machine
@@ -65,10 +64,9 @@ This project is an implementation of the classic Snake game in C++ using the pro
 * Points system for eating blue and red dots 
 * Persistent top-3 best scores stored in a file; displayed after the game ends; prompts for a name if a score qualifies
 
-**To run (Linux):**
-```
-TODO
-```
+**Running:**  
+This project uses SDL2. To build and run the game, you need to have the SDL2 library installed on your machine (the repository does not include the SDL2 binaries).  
+If you run into any issues with installing SDL2 or compiling/running the project on your OS, feel free to contact me — I’ll gladly try to help.
 
 ## Algorithms &amp; Data Structures  
 
