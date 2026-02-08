@@ -212,35 +212,53 @@ Output:
 A turn-based 2D virtual world simulator implemented in C++, visualized in the console using ASCII symbols. The world is represented as an NxM grid where each organism occupies one cell. During each turn, organisms act in initiative/age order; animals move and collide, plants spread, and fights/breeding affect the world state.    
 
 **Features:**
-- Console visualization (ASCII map + event log)
-- Turn system (initiative + age ordering)
-- Animals + plants with unique behaviors (movement, collisions, special rules)
-- Human controlled via arrow keys + special ability
-- Breeding (animals) and sowing (plants)
-- Save/Load game state to/from file
+* Console visualization (ASCII map + event log)
+* Turn system (initiative + age ordering)
+* Animals + plants with unique behaviors (movement, collisions, special rules)
+* Human controlled via arrow keys + special ability
+* Breeding (animals) and sowing (plants)
+* Save/Load game state to/from file (press `s` or `f`)
+
+**To run:**
+```
+cmake -S . -B build
+cmake --build build
+./build/world
+```
 
 ### [Virtual World Simulator (Java / Swing GUI)](object-oriented-programming/virtual-world-java)
 
 A Java implementation of the same virtual world simulator, this time with a GUI built in Swing. The application provides GUI controls for advancing turns and managing the simulation, and it displays a message/log area for events (fights, plant consumption, spawning, etc.).     
 
 **Features:**
-- Swing-based grid visualization + event log panel
-- Turn progression via GUI controls
-- All required animals and plants + Human with special ability
-- Save/Load world state to/from file
-- Add organism by clicking a free cell (choose species/type)
+* Swing-based grid visualization + event log panel
+* Turn progression via GUI controls
+* All required animals and plants + Human with special ability
+* Save/Load world state to/from file
+* Add organism by clicking a free cell (choose species/type)
+
+**To run:**  
+`Main.java` can be run directly from IntelliJ IDE.
 
 ### [Virtual World Simulator (Python / GUI)](object-oriented-programming/virtual-world-python)
 
-A Python version of the virtual world simulator, implemented with a GUI (library of choice). The simulation follows the same turn-based rules (initiative/age ordering, collisions, organism behaviors), includes a Human controlled by arrow keys, and supports saving/loading the state.    
+A Python version of the virtual world simulator, implemented with a GUI using the PyQt5 library. The simulation follows the same turn-based rules (initiative/age ordering, collisions, organism behaviors), includes a Human controlled by arrow keys, and supports saving/loading the state.    
   
 **Features:**
-- GUI visualization of the grid + event/messages area
-- Turn progression via GUI
-- Required animals (including cyber-sheep) and plants
-- Human controlled by arrow keys + special ability
-- Save/Load world state to/from file
-- Add organism by clicking a free cell (choose species/type)
+* GUI visualization of the grid + event/messages area
+* Turn progression via GUI
+* Required animals (including cyber-sheep) and plants
+* Human controlled by arrow keys + special ability
+* Save/Load world state to/from file
+* Add organism by clicking a free cell (choose species/type)
+
+**To run:**
+```
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install PyQt5
+python main.py   
+```
 
 ## Databases  
 
