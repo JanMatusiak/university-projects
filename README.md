@@ -262,7 +262,7 @@ python main.py
 
 ## Databases  
 
-### [Shipping Line Database](databases/shipping-line-db)
+### [Shipping Line Database](databases)
 
 This laboratory project is a complete database design and implementation for a shipping line domain. It covers the full workflow taught in the Databases labs: conceptual modeling (ERD), translating the model into a relational schema, implementing it in SQL, populating it with data, writing non-trivial queries, and preparing scripts that demonstrate transactional processing and isolation-level behavior.    
 
@@ -278,7 +278,7 @@ This laboratory project is a complete database design and implementation for a s
 
 ## Software Engineering
 
-### [High-School E-Learning Platform (UML in Enterprise Architect)](software-engineering/high-school-e-learning-platform)
+### [High-School E-Learning Platform (UML in Enterprise Architect)](software-engineering)
 
 This repository contains a complete set of analysis and design artifacts created as part of the Software Engineering laboratory. The project was completed in a 3-person team (me + two colleagues) and models a high-school e-learning platform, from initial scope definition to detailed UML design.   
 
