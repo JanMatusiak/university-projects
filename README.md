@@ -142,6 +142,14 @@ Deletion finds the node containing the key. If the node is a leaf, it is deleted
 * D x: delete key x (prints “x not exist” if missing; otherwise no output)
 * P: print keys in preorder traversal
 
+**To run:**  
+To build this project you need to compile and link all source files, not only `main.cpp` (e.g., the `Trie` class is implemented in `Trie.cpp`).
+
+macOS (recommended):
+```bash
+clang++ main.cpp Trie.cpp -o main
+```
+
 **Input / Output:**  
 Input:  
 ```txt
