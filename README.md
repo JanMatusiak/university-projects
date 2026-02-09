@@ -49,7 +49,7 @@ clang frogger.c -o frogger -lncurses
 (Ensure config.txt is in the same directory when running.)  
 
 **Watch demo:**
-[![Watch demo](assets/photos/jumping-frog.png)](assets/videos/jumping-frog.mov)
+[![Watch demo](assets/gifs/jumping-frog.gif)](assets/videos/jumping-frog.mov)
 
 ### [Snake Game](basics-of-computer-programming/snake-game)
 
@@ -72,7 +72,7 @@ This project uses SDL2. To build and run the game, you need to have the SDL2 lib
 If you run into any issues with installing SDL2 or compiling/running the project on your OS, feel free to contact me — I’ll gladly try to help.  
 
 **Watch demo:**
-[![Watch demo](assets/photos/snake-game.png)](assets/videos/snake-game.mov)
+[![Watch demo](assets/gifs/snake-game.gif)](assets/videos/snake-game.mov)
 
 ## Algorithms &amp; Data Structures  
 
@@ -233,7 +233,7 @@ cmake --build build
 ```
 
 **Watch demo:**
-[![Watch demo](assets/photos/virtual-world-sim-cpp.png)](assets/videos/virtual-world-sim-cpp.mov)
+[![Watch demo](assets/gifs/virtual-world-sim-cpp.gif)](assets/videos/virtual-world-sim-cpp.mov)
 
 ### [Virtual World Simulator (Java / Swing GUI)](object-oriented-programming/virtual-world-java)
 
@@ -250,7 +250,7 @@ A Java implementation of the same virtual world simulator, this time with a GUI 
 `Main.java` can be run directly from IntelliJ IDE.  
 
 **Watch demo:**
-[![Watch demo](assets/photos/virtual-world-sim-java.png)](assets/videos/virtual-world-sim-java.mov)
+[![Watch demo](assets/gifs/virtual-world-sim-java.gif)](assets/videos/virtual-world-sim-java.mov)
 
 ### [Virtual World Simulator (Python / GUI)](object-oriented-programming/virtual-world-python)
 
@@ -273,7 +273,7 @@ python main.py
 ```
 
 **Watch demo:**
-[![Watch demo](assets/photos/virtual-world-sim-python.png)](assets/videos/virtual-world-sim-python.mov)
+[![Watch demo](assets/gifs/virtual-world-sim-python.gif)](assets/videos/virtual-world-sim-python.mov)
 
 ## Databases  
 
