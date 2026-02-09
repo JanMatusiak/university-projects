@@ -48,6 +48,9 @@ clang frogger.c -o frogger -lncurses
 ```
 (Ensure config.txt is in the same directory when running.)  
 
+**Watch demo:**
+[![Watch demo](assets/photos/jumping-frog.png)](assets/videos/jumping-frog.mov)
+
 ### [Snake Game](basics-of-computer-programming/snake-game)
 
 This project is an implementation of the classic Snake game in C++ using the provided SDL2-based helper framework from the course instruction. The game renders a board and an information panel, supports keyboard control, and tracks gameplay state over time. The instruction forbids using the C++ STL types like string/vector and recommends C-style file I/O for persistence.  
@@ -66,7 +69,10 @@ This project is an implementation of the classic Snake game in C++ using the pro
 
 **Running:**  
 This project uses SDL2. To build and run the game, you need to have the SDL2 library installed on your machine (the repository does not include the SDL2 binaries).  
-If you run into any issues with installing SDL2 or compiling/running the project on your OS, feel free to contact me — I’ll gladly try to help.
+If you run into any issues with installing SDL2 or compiling/running the project on your OS, feel free to contact me — I’ll gladly try to help.  
+
+**Watch demo:**
+[![Watch demo](assets/photos/snake-game.png)](assets/videos/snake-game.mov)
 
 ## Algorithms &amp; Data Structures  
 
@@ -226,6 +232,9 @@ cmake --build build
 ./build/world
 ```
 
+**Watch demo:**
+[![Watch demo](assets/photos/virtual-world-sim-cpp.png)](assets/videos/virtual-world-sim-cpp.mov)
+
 ### [Virtual World Simulator (Java / Swing GUI)](object-oriented-programming/virtual-world-java)
 
 A Java implementation of the same virtual world simulator, this time with a GUI built in Swing. The application provides GUI controls for advancing turns and managing the simulation, and it displays a message/log area for events (fights, plant consumption, spawning, etc.).     
@@ -238,7 +247,10 @@ A Java implementation of the same virtual world simulator, this time with a GUI 
 * Add organism by clicking a free cell (choose species/type)
 
 **To run:**  
-`Main.java` can be run directly from IntelliJ IDE.
+`Main.java` can be run directly from IntelliJ IDE.  
+
+**Watch demo:**
+[![Watch demo](assets/photos/virtual-world-sim-java.png)](assets/videos/virtual-world-sim-java.mov)
 
 ### [Virtual World Simulator (Python / GUI)](object-oriented-programming/virtual-world-python)
 
@@ -259,6 +271,9 @@ source .venv/bin/activate
 python -m pip install PyQt5
 python main.py   
 ```
+
+**Watch demo:**
+[![Watch demo](assets/photos/virtual-world-sim-python.png)](assets/videos/virtual-world-sim-python.mov)
 
 ## Databases  
 
